@@ -1,0 +1,91 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2021/01/20 16:31:05" map="cpm3a" type="FFA" isTeamGame="false" duration="820">
+
+<player name="RILOSHKVAR">
+<stat name="Score" value="30"/>
+<stat name="Kills" value="31"/>
+<stat name="Deaths" value="24"/>
+<stat name="Suicides" value="2"/>
+<stat name="Net" value="5"/>
+<stat name="DamageGiven" value="8373"/>
+<stat name="DamageTaken" value="6685"/>
+<weapons>
+<weapon name="MG" hits="8" shots="53" kills="1"/>
+<weapon name="SG" hits="16" shots="48" kills="0"/>
+<weapon name="GL" hits="3" shots="15" kills="0"/>
+<weapon name="RL" hits="126" shots="249" kills="28"/>
+<weapon name="LG" hits="33" shots="156" kills="2"/>
+<weapon name="RG" hits="0" shots="1" kills="0"/>
+<weapon name="PG" hits="9" shots="163" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1985"/>
+<stat name="ArmorTotal" value="3340"/>
+<items>
+<item name="MH" pickups="9"/>
+<item name="RA" pickups="15"/>
+<item name="YA" pickups="10"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="twist">
+<stat name="Score" value="21"/>
+<stat name="Kills" value="25"/>
+<stat name="Deaths" value="33"/>
+<stat name="Suicides" value="5"/>
+<stat name="Net" value="-13"/>
+<stat name="DamageGiven" value="6840"/>
+<stat name="DamageTaken" value="8429"/>
+<weapons>
+<weapon name="G" hits="2" shots="0" kills="1"/>
+<weapon name="MG" hits="2" shots="36" kills="0"/>
+<weapon name="SG" hits="101" shots="336" kills="1"/>
+<weapon name="GL" hits="1" shots="16" kills="1"/>
+<weapon name="RL" hits="80" shots="181" kills="18"/>
+<weapon name="LG" hits="56" shots="227" kills="2"/>
+<weapon name="RG" hits="3" shots="17" kills="1"/>
+<weapon name="PG" hits="33" shots="300" kills="1"/>
+</weapons>
+<stat name="HealthTotal" value="1020"/>
+<stat name="ArmorTotal" value="4185"/>
+<items>
+<item name="MH" pickups="3"/>
+<item name="RA" pickups="12"/>
+<item name="YA" pickups="22"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="Ignat">
+<stat name="Score" value="14"/>
+<stat name="Kills" value="17"/>
+<stat name="Deaths" value="16"/>
+<stat name="Suicides" value="3"/>
+<stat name="Net" value="-2"/>
+<stat name="DamageGiven" value="5176"/>
+<stat name="DamageTaken" value="5275"/>
+<weapons>
+<weapon name="G" hits="1" shots="0" kills="1"/>
+<weapon name="MG" hits="5" shots="35" kills="0"/>
+<weapon name="SG" hits="37" shots="192" kills="1"/>
+<weapon name="GL" hits="4" shots="65" kills="1"/>
+<weapon name="RL" hits="78" shots="218" kills="13"/>
+<weapon name="LG" hits="23" shots="87" kills="1"/>
+<weapon name="RG" hits="1" shots="5" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1945"/>
+<stat name="ArmorTotal" value="2635"/>
+<items>
+<item name="MH" pickups="8"/>
+<item name="RA" pickups="3"/>
+<item name="YA" pickups="18"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+</match>

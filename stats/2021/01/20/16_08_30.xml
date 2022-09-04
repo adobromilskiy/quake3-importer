@@ -1,0 +1,84 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2021/01/20 16:08:30" map="cpm16" type="FFA" isTeamGame="false" duration="786">
+
+<player name="RILOSHKVAR">
+<stat name="Score" value="26"/>
+<stat name="Kills" value="28"/>
+<stat name="Deaths" value="23"/>
+<stat name="Suicides" value="2"/>
+<stat name="Net" value="3"/>
+<stat name="DamageGiven" value="8537"/>
+<stat name="DamageTaken" value="7873"/>
+<weapons>
+<weapon name="MG" hits="15" shots="62" kills="0"/>
+<weapon name="RL" hits="106" shots="262" kills="28"/>
+<weapon name="LG" hits="3" shots="35" kills="0"/>
+<weapon name="PG" hits="1" shots="10" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="2360"/>
+<stat name="ArmorTotal" value="3140"/>
+<items>
+<item name="MH" pickups="9"/>
+<item name="RA" pickups="8"/>
+<item name="YA" pickups="13"/>
+<item name="GA" pickups="7"/>
+</items>
+<powerups>
+<item name="Quad" pickups="6" time="78264"/>
+</powerups>
+</player>
+
+<player name="twist">
+<stat name="Score" value="30"/>
+<stat name="Kills" value="34"/>
+<stat name="Deaths" value="15"/>
+<stat name="Suicides" value="4"/>
+<stat name="Net" value="15"/>
+<stat name="DamageGiven" value="9323"/>
+<stat name="DamageTaken" value="6690"/>
+<weapons>
+<weapon name="MG" hits="0" shots="2" kills="0"/>
+<weapon name="RL" hits="102" shots="269" kills="29"/>
+<weapon name="LG" hits="39" shots="264" kills="5"/>
+</weapons>
+<stat name="HealthTotal" value="1560"/>
+<stat name="ArmorTotal" value="3815"/>
+<items>
+<item name="MH" pickups="3"/>
+<item name="RA" pickups="12"/>
+<item name="YA" pickups="16"/>
+<item name="GA" pickups="4"/>
+</items>
+<powerups>
+<item name="Quad" pickups="7" time="121404"/>
+</powerups>
+</player>
+
+<player name="Ignat">
+<stat name="Score" value="7"/>
+<stat name="Kills" value="8"/>
+<stat name="Deaths" value="32"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="-25"/>
+<stat name="DamageGiven" value="5050"/>
+<stat name="DamageTaken" value="8347"/>
+<weapons>
+<weapon name="MG" hits="14" shots="112" kills="0"/>
+<weapon name="GL" hits="2" shots="10" kills="0"/>
+<weapon name="RL" hits="67" shots="187" kills="7"/>
+<weapon name="LG" hits="43" shots="226" kills="1"/>
+<weapon name="PG" hits="3" shots="25" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1330"/>
+<stat name="ArmorTotal" value="3270"/>
+<items>
+<item name="MH" pickups="7"/>
+<item name="RA" pickups="6"/>
+<item name="YA" pickups="20"/>
+<item name="GA" pickups="3"/>
+</items>
+<powerups>
+<item name="Quad" pickups="2" time="27097"/>
+</powerups>
+</player>
+</match>

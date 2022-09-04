@@ -1,0 +1,86 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2022/08/16 10:52:16" map="cpm16" type="FFA" isTeamGame="false" duration="669">
+
+<player name="twist">
+<stat name="Score" value="24"/>
+<stat name="Kills" value="24"/>
+<stat name="Deaths" value="30"/>
+<stat name="Suicides" value="0"/>
+<stat name="Net" value="-6"/>
+<stat name="DamageGiven" value="7032"/>
+<stat name="DamageTaken" value="6511"/>
+<weapons>
+<weapon name="G" hits="1" shots="0" kills="0"/>
+<weapon name="MG" hits="30" shots="105" kills="0"/>
+<weapon name="SG" hits="0" shots="48" kills="0"/>
+<weapon name="RL" hits="89" shots="197" kills="18"/>
+<weapon name="LG" hits="137" shots="422" kills="6"/>
+<weapon name="BFG" hits="3" shots="16" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1100"/>
+<stat name="ArmorTotal" value="2885"/>
+<items>
+<item name="MH" pickups="7"/>
+<item name="RA" pickups="8"/>
+<item name="YA" pickups="15"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="RILOSHKVAR">
+<stat name="Score" value="30"/>
+<stat name="Kills" value="33"/>
+<stat name="Deaths" value="16"/>
+<stat name="Suicides" value="3"/>
+<stat name="Net" value="14"/>
+<stat name="DamageGiven" value="6197"/>
+<stat name="DamageTaken" value="6199"/>
+<weapons>
+<weapon name="MG" hits="15" shots="83" kills="1"/>
+<weapon name="SG" hits="0" shots="16" kills="0"/>
+<weapon name="RL" hits="95" shots="208" kills="27"/>
+<weapon name="LG" hits="45" shots="214" kills="4"/>
+<weapon name="BFG" hits="6" shots="24" kills="1"/>
+</weapons>
+<stat name="HealthTotal" value="1590"/>
+<stat name="ArmorTotal" value="4270"/>
+<items>
+<item name="MH" pickups="9"/>
+<item name="RA" pickups="15"/>
+<item name="YA" pickups="16"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="JavaScripter">
+<stat name="Score" value="14"/>
+<stat name="Kills" value="14"/>
+<stat name="Deaths" value="25"/>
+<stat name="Suicides" value="0"/>
+<stat name="Net" value="-11"/>
+<stat name="DamageGiven" value="3813"/>
+<stat name="DamageTaken" value="4332"/>
+<weapons>
+<weapon name="MG" hits="21" shots="126" kills="0"/>
+<weapon name="SG" hits="2" shots="64" kills="0"/>
+<weapon name="GL" hits="0" shots="6" kills="0"/>
+<weapon name="RL" hits="29" shots="73" kills="6"/>
+<weapon name="LG" hits="13" shots="137" kills="1"/>
+<weapon name="BFG" hits="18" shots="68" kills="7"/>
+</weapons>
+<stat name="HealthTotal" value="525"/>
+<stat name="ArmorTotal" value="1080"/>
+<items>
+<item name="MH" pickups="0"/>
+<item name="RA" pickups="0"/>
+<item name="YA" pickups="9"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+</match>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2021/01/15 16:26:55" map="cpm8" type="FFA" isTeamGame="false" duration="653">
+
+<player name="RILOSHKVAR">
+<stat name="Score" value="29"/>
+<stat name="Kills" value="30"/>
+<stat name="Deaths" value="24"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="5"/>
+<stat name="DamageGiven" value="5229"/>
+<stat name="DamageTaken" value="5266"/>
+<weapons>
+<weapon name="MG" hits="2" shots="25" kills="0"/>
+<weapon name="GL" hits="0" shots="5" kills="0"/>
+<weapon name="RL" hits="65" shots="152" kills="22"/>
+<weapon name="LG" hits="70" shots="414" kills="4"/>
+<weapon name="RG" hits="10" shots="40" kills="4"/>
+</weapons>
+<stat name="HealthTotal" value="1775"/>
+<stat name="ArmorTotal" value="1265"/>
+<items>
+<item name="MH" pickups="8"/>
+<item name="RA" pickups="0"/>
+<item name="YA" pickups="12"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="Ignat">
+<stat name="Score" value="18"/>
+<stat name="Kills" value="18"/>
+<stat name="Deaths" value="29"/>
+<stat name="Suicides" value="0"/>
+<stat name="Net" value="-11"/>
+<stat name="DamageGiven" value="3517"/>
+<stat name="DamageTaken" value="5314"/>
+<weapons>
+<weapon name="MG" hits="9" shots="76" kills="0"/>
+<weapon name="GL" hits="4" shots="49" kills="1"/>
+<weapon name="RL" hits="53" shots="183" kills="13"/>
+<weapon name="LG" hits="58" shots="270" kills="4"/>
+</weapons>
+<stat name="HealthTotal" value="1360"/>
+<stat name="ArmorTotal" value="900"/>
+<items>
+<item name="MH" pickups="3"/>
+<item name="RA" pickups="0"/>
+<item name="YA" pickups="7"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="twist">
+<stat name="Score" value="30"/>
+<stat name="Kills" value="31"/>
+<stat name="Deaths" value="26"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="4"/>
+<stat name="DamageGiven" value="6544"/>
+<stat name="DamageTaken" value="4710"/>
+<weapons>
+<weapon name="G" hits="2" shots="0" kills="1"/>
+<weapon name="MG" hits="3" shots="7" kills="0"/>
+<weapon name="GL" hits="0" shots="8" kills="0"/>
+<weapon name="RL" hits="79" shots="171" kills="20"/>
+<weapon name="LG" hits="31" shots="239" kills="3"/>
+<weapon name="RG" hits="24" shots="54" kills="7"/>
+</weapons>
+<stat name="HealthTotal" value="1240"/>
+<stat name="ArmorTotal" value="440"/>
+<items>
+<item name="MH" pickups="8"/>
+<item name="RA" pickups="0"/>
+<item name="YA" pickups="2"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+</match>

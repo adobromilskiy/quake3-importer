@@ -1,0 +1,79 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../../basics/stats141.xsl"?>
+<match id="0" datetime="2022/08/11 11:34:34" map="cpm16" type="FFA" isTeamGame="false" duration="801">
+
+<player name="JavaScripter">
+<stat name="Score" value="0"/>
+<stat name="Kills" value="0"/>
+<stat name="Deaths" value="1"/>
+<stat name="Suicides" value="0"/>
+<stat name="Net" value="-1"/>
+<stat name="DamageGiven" value="0"/>
+<stat name="DamageTaken" value="100"/>
+<weapons>
+</weapons>
+<stat name="HealthTotal" value="0"/>
+<stat name="ArmorTotal" value="0"/>
+<items>
+<item name="MH" pickups="0"/>
+<item name="RA" pickups="0"/>
+<item name="YA" pickups="0"/>
+<item name="GA" pickups="0"/>
+</items>
+<powerups>
+</powerups>
+</player>
+
+<player name="twist">
+<stat name="Score" value="30"/>
+<stat name="Kills" value="32"/>
+<stat name="Deaths" value="8"/>
+<stat name="Suicides" value="2"/>
+<stat name="Net" value="22"/>
+<stat name="DamageGiven" value="7915"/>
+<stat name="DamageTaken" value="5113"/>
+<weapons>
+<weapon name="MG" hits="0" shots="2" kills="0"/>
+<weapon name="GL" hits="1" shots="17" kills="0"/>
+<weapon name="RL" hits="91" shots="217" kills="24"/>
+<weapon name="LG" hits="63" shots="314" kills="8"/>
+</weapons>
+<stat name="HealthTotal" value="1845"/>
+<stat name="ArmorTotal" value="4260"/>
+<items>
+<item name="MH" pickups="4"/>
+<item name="RA" pickups="15"/>
+<item name="YA" pickups="16"/>
+<item name="GA" pickups="3"/>
+</items>
+<powerups>
+<item name="Quad" pickups="5" time="98330"/>
+</powerups>
+</player>
+
+<player name="RILOSHKVAR">
+<stat name="Score" value="15"/>
+<stat name="Kills" value="16"/>
+<stat name="Deaths" value="16"/>
+<stat name="Suicides" value="1"/>
+<stat name="Net" value="-1"/>
+<stat name="DamageGiven" value="5539"/>
+<stat name="DamageTaken" value="4534"/>
+<weapons>
+<weapon name="MG" hits="26" shots="111" kills="0"/>
+<weapon name="SG" hits="27" shots="208" kills="5"/>
+<weapon name="RL" hits="68" shots="140" kills="11"/>
+<weapon name="LG" hits="26" shots="163" kills="0"/>
+</weapons>
+<stat name="HealthTotal" value="1125"/>
+<stat name="ArmorTotal" value="2065"/>
+<items>
+<item name="MH" pickups="3"/>
+<item name="RA" pickups="6"/>
+<item name="YA" pickups="9"/>
+<item name="GA" pickups="2"/>
+</items>
+<powerups>
+<item name="Quad" pickups="5" time="63241"/>
+</powerups>
+</player>
+</match>
