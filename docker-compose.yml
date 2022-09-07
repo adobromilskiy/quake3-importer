@@ -1,0 +1,25 @@
+networks:
+  mynet:
+    driver: bridge
+
+services:
+  db:
+    image: mongo:4.2
+    hostname: mongo
+    container_name: mongo
+    ports:
+        - "27017:27017"
+    networks:
+    - mynet
+
+  app:
+    build: .
+    hostname: app
+    container_name: app
+    depends_on:
+      - db
+    volumes:
+      - ./stats:/stats
+    command: /app --dbconn=mongodb://mongo:27017 --dbname=quake3 --path=/stats
+    networks:
+    - mynet
