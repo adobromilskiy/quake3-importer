@@ -22,7 +22,7 @@
 <items>
 <item name="MH" pickups="0"/>
 <item name="RA" pickups="0"/>
-<item name="YA" pickups="14"/>
+<item name="YA" pickups="14"
 <item name="GA" pickups="0"/>
 </items>
 <powerups>
