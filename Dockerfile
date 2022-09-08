@@ -4,4 +4,5 @@ WORKDIR /build
 RUN cd app && go build -v -race -mod=vendor -o /app
 FROM ubuntu
 COPY --from=builder /app /app
+VOLUME ["/stats"]
 ENTRYPOINT [ "/app" ]

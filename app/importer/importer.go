@@ -28,8 +28,7 @@ func Go(ctx context.Context, dbconn, dbname, dir string) error {
 			continue
 		}
 
-		err = col.FindOne(ctx, bson.M{"map": match.Map, "type": match.Type, "duration": match.Duration, "datetime": match.Datetime}).Err()
-		if err == nil {
+		if err := col.FindOne(ctx, bson.M{"map": match.Map, "type": match.Type, "duration": match.Duration, "datetime": match.Datetime}).Err(); err == nil {
 			log.Println("[INFO] match already exists.")
 			continue
 		}
