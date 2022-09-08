@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"os"
 	"time"
@@ -22,10 +23,12 @@ func main() {
 		os.Exit(1)
 	}
 
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 	if err := importer.Go(ctx, opts.DbConn, opts.DbName, opts.Path); err != nil {
 		log.Printf("[ERROR] failed to import: %v", err)
 		os.Exit(1)
 	}
+
+	fmt.Println("Done!")
 }

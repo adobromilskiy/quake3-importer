@@ -19,7 +19,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./stats:/stats
+      - ./data:/stats
     command: /app --dbconn=mongodb://mongo:27017 --dbname=quake3 --path=/stats
     networks:
     - mynet
