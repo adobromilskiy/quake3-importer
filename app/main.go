@@ -6,10 +6,8 @@ import (
 	"os"
 	"time"
 
+	"github.com/adobromilskiy/quake3-importer/app/importer"
 	"github.com/jessevdk/go-flags"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
 )
 
 var opts struct {
@@ -26,19 +24,8 @@ func main() {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
-	client, err := mongo.Connect(ctx, options.Client().ApplyURI(opts.DbConn))
-	if err != nil {
-		panic(err)
+	if err := importer.Go(ctx, opts.DbConn, opts.DbName, opts.Path); err != nil {
+		log.Printf("[ERROR] failed to import: %v", err)
+		os.Exit(1)
 	}
-	defer func() {
-		if err := client.Disconnect(ctx); err != nil {
-			panic(err)
-		}
-	}()
-	err = client.Ping(ctx, readpref.Primary())
-	if err != nil {
-		panic(err)
-	}
-
-	log.Println(opts.Path)
 }
