@@ -24,7 +24,7 @@ func Go(ctx context.Context, dbconn, dbname, dir string) error {
 	for _, file := range files {
 		match, err := parseFile(file)
 		if err != nil {
-			log.Printf("[ERROR] failed while parse file: %s", err)
+			log.Printf("[ERROR] failed while parse file '%s': %s", file, err)
 			continue
 		}
 
@@ -33,12 +33,11 @@ func Go(ctx context.Context, dbconn, dbname, dir string) error {
 			continue
 		}
 
-		result, err := col.InsertOne(ctx, match)
+		_, err = col.InsertOne(ctx, match)
 		if err != nil {
-			log.Println(err)
+			log.Printf("[ERROR] failed to insert a document: %s", err)
 			continue
 		}
-		log.Printf("[INFO] inserted match: %s", result.InsertedID)
 	}
 
 	if err := client.Disconnect(ctx); err != nil {
