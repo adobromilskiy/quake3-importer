@@ -1,8 +1,6 @@
 name: build
 on:
   push:
-    branches:
-      - main
 
 jobs:
 
@@ -14,8 +12,7 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v3
 
-    - name: Run docker compose
+    - name: Test
       run: |
         docker compose up -d
-        echo $GITHUB_WORKSPACE
-        pwd
+        go test -mod=vendor ./app/... -coverprofile $GITHUB_WORKSPACE/cover.out
