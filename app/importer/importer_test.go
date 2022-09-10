@@ -21,8 +21,4 @@ func TestGo_success(t *testing.T) {
 	if err := Go(context.Background(), "mongodb://localhost:27017", "quake3", "../../data"); err != nil {
 		t.Errorf("expected nil, got %v", err)
 	}
-
-	if err := Go(context.Background(), "mongodb://localhost:27017", "quake3", "../../data"); err != nil {
-		t.Errorf("expected nil, got %v", err)
-	}
 }
