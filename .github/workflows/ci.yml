@@ -23,8 +23,11 @@ jobs:
         go test -mod=vendor -covermode=count ./app/... -coverprofile $GITHUB_WORKSPACE/cover.out
 
     - name: Submit coverage
-      run: |
-        go get golang.org/x/tools/cmd/cover
-        go get github.com/mattn/goveralls
-        ls -la $(go env GOPATH)/bin
+      uses: shogo82148/actions-goveralls@v1
+      with:
+        path-to-profile: $GITHUB_WORKSPACE/cover.out
+      # run: |
+      #   go get golang.org/x/tools/cmd/cover
+      #   go get github.com/mattn/goveralls
+      #   ls -la $(go env GOPATH)/bin
         # $(go env GOPATH)/bin/goveralls -coverprofile=$GITHUB_WORKSPACE/cover.out -service=github -repotoken ${{ secrets.COVERALLS_TOKEN }}
