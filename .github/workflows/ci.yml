@@ -26,7 +26,7 @@ jobs:
     - name: Submit coverage
       uses: shogo82148/actions-goveralls@v1
       with:
-        path-to-profile: $GITHUB_WORKSPACE/cover.out
+        path-to-profile: cover.out
       # run: |
       #   go get golang.org/x/tools/cmd/cover
       #   go get github.com/mattn/goveralls
