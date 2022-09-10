@@ -21,6 +21,7 @@ jobs:
       run: |
         docker compose up -d
         go test -mod=vendor -covermode=count ./app/... -coverprofile $GITHUB_WORKSPACE/cover.out
+        ls -la
 
     - name: Submit coverage
       uses: shogo82148/actions-goveralls@v1
