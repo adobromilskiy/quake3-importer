@@ -26,5 +26,5 @@ jobs:
       run: |
         go get golang.org/x/tools/cmd/cover
         go get github.com/mattn/goveralls
-        which goveralls
-        $(go env GOPATH)/bin/goveralls -coverprofile=$GITHUB_WORKSPACE/cover.out -service=github -repotoken ${{ secrets.COVERALLS_TOKEN }}
+        ls -la $(go env GOPATH)
+        # $(go env GOPATH)/bin/goveralls -coverprofile=$GITHUB_WORKSPACE/cover.out -service=github -repotoken ${{ secrets.COVERALLS_TOKEN }}
