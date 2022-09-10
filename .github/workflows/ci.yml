@@ -1,0 +1,21 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Check out repository code
+      uses: actions/checkout@v3
+
+    - name: Run docker compose
+      run: |
+        docker compose up -d
+        echo $GITHUB_WORKSPACE
+        pwd
