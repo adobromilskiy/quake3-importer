@@ -21,14 +21,8 @@ jobs:
       run: |
         docker compose up -d
         go test -mod=vendor -covermode=count ./app/... -coverprofile $GITHUB_WORKSPACE/cover.out
-        ls -la
 
     - name: Submit coverage
       uses: shogo82148/actions-goveralls@v1
       with:
         path-to-profile: cover.out
-      # run: |
-      #   go get golang.org/x/tools/cmd/cover
-      #   go get github.com/mattn/goveralls
-      #   ls -la $(go env GOPATH)/bin
-        # $(go env GOPATH)/bin/goveralls -coverprofile=$GITHUB_WORKSPACE/cover.out -service=github -repotoken ${{ secrets.COVERALLS_TOKEN }}
