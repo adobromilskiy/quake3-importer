@@ -1,6 +1,6 @@
 # quake3-importer
 
-[![build](https://github.com/adobromilskiy/quake3-importer/actions/workflows/ci.yml/badge.svg)](https://github.com/adobromilskiy/quake3-importer/actions/workflows/ci.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/adobromilskiy/quake3-importer)](https://goreportcard.com/report/github.com/adobromilskiy/quake3-importer) [![Coverage Status](https://coveralls.io/repos/github/adobromilskiy/quake3-importer/badge.svg?branch=main)](https://coveralls.io/github/adobromilskiy/quake3-importer?branch=main)
+[![build](https://github.com/adobromilskiy/quake3-importer/actions/workflows/ci.yml/badge.svg)](https://github.com/adobromilskiy/quake3-importer/actions/workflows/ci.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/adobromilskiy/quake3-importer)](https://goreportcard.com/report/github.com/adobromilskiy/quake3-importer) [![Coverage Status](https://coveralls.io/repos/github/adobromilskiy/quake3-importer/badge.svg?branch=main&kill_cache=1)](https://coveralls.io/github/adobromilskiy/quake3-importer?branch=main)
 
 Application to import quake3 stats files into mongodb.
 
