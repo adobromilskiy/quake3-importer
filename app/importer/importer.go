@@ -19,7 +19,7 @@ func Go(ctx context.Context, dbconn, dbname, dir string) error {
 	if err != nil {
 		return err
 	}
-	col := client.Database(dbname).Collection("match")
+	col := client.Database(dbname).Collection("matches")
 
 	for _, file := range files {
 		match, err := parseFile(file)
