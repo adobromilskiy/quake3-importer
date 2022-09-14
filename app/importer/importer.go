@@ -24,18 +24,18 @@ func Go(ctx context.Context, dbconn, dbname, dir string) error {
 	for _, file := range files {
 		match, err := parseFile(file)
 		if err != nil {
-			log.Printf("[ERROR] failed while parse file '%s': %s", file, err)
+			log.Printf("[WARN] failed while parse file '%s': %s", file, err)
 			continue
 		}
 
 		if err := col.FindOne(ctx, bson.M{"map": match.Map, "type": match.Type, "duration": match.Duration, "datetime": match.Datetime}).Err(); err == nil {
-			log.Println("[INFO] match already exists.")
+			log.Println("[WARN] match already exists.")
 			continue
 		}
 
 		_, err = col.InsertOne(ctx, match)
 		if err != nil {
-			log.Printf("[ERROR] failed to insert a document: %s", err)
+			log.Printf("[WARN] failed to insert a document: %s", err)
 			continue
 		}
 	}
