@@ -24,6 +24,12 @@ jobs:
         docker compose up -d
         go test -mod=vendor -covermode=count ./app/... -coverprofile $GITHUB_WORKSPACE/cover.out
 
+    - name: install golangci-lint
+      run: curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $GITHUB_WORKSPACE v1.49.0
+
+    - name: run linters
+      run: $GITHUB_WORKSPACE/golangci-lint run ./...
+
     - name: Submit coverage
       uses: shogo82148/actions-goveralls@v1
       with:
