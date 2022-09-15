@@ -24,18 +24,18 @@ func Go(ctx context.Context, dbconn, dbname, dir string) error {
 	for _, file := range files {
 		match, err := parseFile(file)
 		if err != nil {
-			log.Printf("[ERROR] failed while parse file '%s': %s", file, err)
+			log.Printf("[WARN] failed while parse file '%s': %s", file, err)
 			continue
 		}
 
 		if err := col.FindOne(ctx, bson.M{"map": match.Map, "type": match.Type, "duration": match.Duration, "datetime": match.Datetime}).Err(); err == nil {
-			log.Println("[INFO] match already exists.")
+			log.Println("[WARN] match already exists.")
 			continue
 		}
 
-		_, err = col.InsertOne(ctx, match)
+		_, err = col.InsertOne(ctx, transform(match))
 		if err != nil {
-			log.Printf("[ERROR] failed to insert a document: %s", err)
+			log.Printf("[WARN] failed to insert a document: %s", err)
 			continue
 		}
 	}
@@ -45,4 +45,47 @@ func Go(ctx context.Context, dbconn, dbname, dir string) error {
 	}
 
 	return nil
+}
+
+func transform(match XMLMatch) Match {
+	m := Match{
+		Map:      match.Map,
+		Type:     match.Type,
+		Duration: match.Duration,
+		Datetime: match.Datetime,
+	}
+
+	for _, player := range match.Players {
+		var p Player
+		p.Name = player.Name
+
+		for _, stat := range player.Stats {
+			switch stat.Name {
+			case "Score":
+				p.Score = stat.Value
+			case "Kills":
+				p.Kills = uint(stat.Value)
+			case "Deaths":
+				p.Deaths = uint(stat.Value)
+			case "Suicides":
+				p.Suicides = uint(stat.Value)
+			case "DamageGiven":
+				p.DamageGiven = uint(stat.Value)
+			case "DamageTaken":
+				p.DamageTaken = uint(stat.Value)
+			case "HealthTotal":
+				p.HealthTotal = uint(stat.Value)
+			case "ArmorTotal":
+				p.ArmorTotal = uint(stat.Value)
+			}
+		}
+
+		p.Weapons = player.Weapons
+		p.Items = player.Items
+		p.Powerups = player.Powerups
+
+		m.Players = append(m.Players, p)
+	}
+
+	return m
 }

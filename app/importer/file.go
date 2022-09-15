@@ -23,7 +23,7 @@ func getFiles(path string) (res []string, err error) {
 	return res, nil
 }
 
-func parseFile(path string) (res Match, err error) {
+func parseFile(path string) (res XMLMatch, err error) {
 	dat, err := os.ReadFile(path)
 	if err != nil {
 		return res, err
