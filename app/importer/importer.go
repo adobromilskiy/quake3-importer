@@ -3,6 +3,7 @@ package importer
 import (
 	"context"
 	"log"
+	"strings"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -49,7 +50,7 @@ func Go(ctx context.Context, dbconn, dbname, dir string) error {
 
 func transform(match XMLMatch) Match {
 	m := Match{
-		Map:      match.Map,
+		Map:      strings.ToLower(match.Map),
 		Type:     match.Type,
 		Duration: match.Duration,
 		Datetime: match.Datetime,
