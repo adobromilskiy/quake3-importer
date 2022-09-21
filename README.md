@@ -6,6 +6,16 @@ Application to import quake3 stats files into mongodb.
 
 **Note:** application parse only FFA stats file. You are wellcome to contribute.
 
+- Repositories:
+  - GitHub: [github.com/adobromilskiy/quake3-importer](https://github.com/adobromilskiy/quake3-importer)
+  - DockerHub: [adobromilskiy/quake3-importer](https://hub.docker.com/r/adobromilskiy/quake3-importer)
+
+
+- Dockerfile: [https://github.com/adobromilskiy/quake3-importer/blob/main/Dockerfile](https://github.com/adobromilskiy/quake3-importer/blob/main/Dockerfile)
+
+
+- Maintained by: [Alexander Dobromilskiy](https://twst.dev)
+
 ## Quick start
 
 Clone repository and run `make build` command. Go to the **app** directory and run application with next parameters:
