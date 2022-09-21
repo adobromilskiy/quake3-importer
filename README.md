@@ -23,3 +23,9 @@ make build
 cd app
 ./app --dbconn=mongodb://localhost:27017 --dbname=quake3 --path=/path/to/stats/files
 ```
+
+or via docker:
+
+```console
+docker run -v /path/to/stats/files:/stats --network=mongo_network adobromilskiy/quake3-importer:latest /app --dbconn=mongodb://mongohost:27017 --dbname=quake3 --path=/stats
+```
